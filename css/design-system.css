@@ -229,7 +229,7 @@ nav .container .menu-btn i{
     .header{
         position: relative;
     }
-    ul{
+    nav ul{
         position: absolute;
         top: 75.703px;
         left: -100%;
