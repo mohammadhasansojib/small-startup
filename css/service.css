@@ -1,0 +1,128 @@
+/**
+* ! style rules for service section
+**/
+
+.service-sec{
+    padding: 40px 0;
+    min-height: calc(100vh - 194px);
+}
+.service-sec .container .text-sec{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.service-sec .container .text-sec h2{
+    margin: 10px 0;
+}
+.service-sec .container .text-sec p{
+    font-size: var(--sub);
+    font-family: var(--font-2);
+    font-weight: 500;
+}
+
+
+
+.service-sec .container .service-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    grid-auto-rows: auto;
+
+    grid-gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.service-sec .container .service-cards .card{
+    padding: 30px;
+    box-shadow: 1px 1px 12px #d9d9d9;
+
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-gap: 5px;
+}
+
+
+
+
+
+
+.service-sec .service-cards .card .card-upper{
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-gap: 5px;
+
+    margin-bottom: 15px;
+}
+.service-sec .service-cards .card .card-upper label{
+    font-family: var(--font-2);
+    color: var(--color-dark-100);
+    font-weight: 500;
+}
+.service-sec .service-cards .card .card-upper .price-and-time{
+    font-size: var(--body);
+    color: var(--color-dark-75);
+    font-family: var(--font-2);
+
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+
+    align-items: center;
+    justify-content: center;
+
+    grid-gap: 10px;
+
+}
+.service-sec .service-cards .card .card-upper .price-and-time span{
+    font-size: var(--h1);
+    color: var(--color-dark-100);
+    font-weight: bold;
+}
+.service-sec .service-cards .card .card-upper p{
+    color: var(--color-dark-75);
+    font-family: var(--font-2);
+    
+}
+
+
+
+
+.service-sec .service-cards .card .features ul li{
+    font-family: var(--font-2);
+    color: var(--color-dark-100);
+    margin: 10px 0;
+    font-weight: 500;
+}
+.service-sec .service-cards .card .features ul li i{
+    color: var(--color-green-100);
+    margin-right: 10px;
+    font-size: var(--h6);
+}
+
+
+
+
+.service-sec .service-cards .card button{
+    justify-self: center;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+/**
+* ! style rules for media queris
+**/
+
+@media screen and (max-width: 768px){
+
+    .service-sec .container .service-cards .card-upper p{
+        font-size: 14px;
+    }
+    .service-sec .container .service-cards .card .features ul li{
+        font-size: 14px;
+    }
+}
