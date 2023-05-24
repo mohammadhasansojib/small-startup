@@ -1,0 +1,66 @@
+.portfolio-sec{
+    padding: 40px 0;
+    min-height: calc(100vh - 194px);
+}
+.portfolio-sec .container{
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+
+    grid-gap: 40px;
+    text-align: center;
+}
+.portfolio-sec .container .text-sec{
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-gap: 5px;
+}
+.portfolio-sec .container .text-sec p{
+    font-size: var(--sub);
+    font-family: var(--font-2);
+    font-weight: 500;
+}
+.portfolio-sec .container .projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(292.3px, 1fr));
+
+    grid-gap: 30px;
+
+    align-items: center;
+}
+.portfolio-sec .container .projects img{
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    
+}
+.portfolio-sec .container button{
+    justify-self: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .common-title{
+        font-size: var(--h2);
+    }
+    .portfolio-sec .container .text-sec p{
+        font-size: var(--h6);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .portfolio-sec .container .projects{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .common-title{
+        font-size: var(--h3);
+    }
+
+}
